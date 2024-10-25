@@ -1,14 +1,14 @@
 <h1 align="center">Rule Engine Project</h1>
 
 <p align="center">
-    This project demonstrates a rule engine application using JavaScript, Node.js, and MongoDB to build and evaluate rule-based conditions.
+    This project demonstrates a rule engine application using JavaScript, Node.js, Express.js and MongoDB to build and evaluate rule-based conditions based on user eligibility.
 </p>
 
 <h2>🚀 Features</h2>
 <ul>
     <li>Convert rule strings into Abstract Syntax Trees (AST) for structured processing.</li>
     <li>Combine multiple ASTs into a single representation.</li>
-    <li>Evaluate rules based on user-defined data.</li>
+    <li>Evaluate rules based on user-defined json data.</li>
 </ul>
 
 <h2>🔧 Tech Stack</h2>
@@ -34,7 +34,7 @@
 <h2>📝 Usage</h2>
 <ol>
     <li><strong>Clone Repository:</strong> Clone this repository from GitHub.</li>
-    <li><strong>Install Dependencies:</strong> Run <code>npm install</code> to install project dependencies.</li>
+    <li><strong>Install Dependencies:</strong> Run <code>npm install express</code> to install project dependencies.</li>
     <li><strong>Start Server:</strong> Use <code>npm start</code> to start the server.</li>
     <li><strong>Test Endpoints:</strong> Use a tool like Postman to test rule creation, combination, and evaluation.</li>
 </ol>
