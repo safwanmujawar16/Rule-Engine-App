@@ -34,7 +34,7 @@
 function createRule() {
     const ruleString = document.getElementById('ruleInput').value;
 
-    fetch('http://localhost:3000/api/rules/create', {
+    fetch('http://localhost:10000/api/rules/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ruleString })
@@ -57,7 +57,7 @@ function evaluateRule() {
     const data = JSON.parse(document.getElementById('dataInput').value);
     const ruleId = document.getElementById('ruleId').value;
 
-    fetch('http://localhost:3000/api/rules/evaluate', {
+    fetch('http://localhost:10000/api/rules/evaluate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ruleId, data })
