@@ -1,8 +1,13 @@
 const mongoose = require('mongoose');
 
+const dotenv = require('dotenv');
+
+// Load environment variables from .env file
+dotenv.config();
+
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb+srv://safwanmujawar16:mypassword@rule-engine.rqip4.mongodb.net/?retryWrites=true&w=majority&appName=rule-engine');  // No deprecated options
+         await mongoose.connect(process.env.MONGO_URI);  // No deprecated options
         console.log('MongoDB connected...');
     } catch (err) {
         console.error(err.message);
